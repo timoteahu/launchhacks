@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/timoteahu/launchhacks/issues"
   },
-  "homepage": "https://github.com/timoteahu/launchhacks#readme"
+  "homepage": "https://github.com/timoteahu/launchhacks#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  }
 }
