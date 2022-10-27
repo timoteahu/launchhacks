@@ -1,0 +1,46 @@
+<header class="flex flex-row justify-center items-center">
+
+    <!-- <div class="flex flex-row justify-center items-center">
+        <div class="flex flex-row ">
+        </div>
+    </div> -->
+
+    <div class="w-full flex flex-row justify-between items-center pl-24" style="max-width: 80em;">
+        <a class="brand" href="/"> <img src="../static/img/logo.png" alt="" style="max-width: 2em;"> </a>
+
+        <div class="menu-btn"></div>
+
+        <div class="navigation mt-10" style="overflow-y: hidden;">
+            <div class="navigation-items mt-10" style="overflow-y: hidden;">
+                {% if current == "home" %}
+                <a href="/" style="color: #576CA8;">Home</a>
+                {% else %} 
+                <a href="/">Home</a>
+                {%endif%}
+
+
+                {% if current == "programs" %}
+                <a href="/programs" style="color: #576CA8;">Mission</a>
+                {% else %} 
+                <a href="/programs">Mission </a>
+                {%endif%}
+
+                {% if current == "branches" %}
+                <a href="/branches" style="color: #576CA8;">Launch Hacks I</a>
+                {% else %} 
+                <a href="/branches">Launch Hacks I</a>
+                {%endif%}
+
+                {% if current == "resources" %}
+                <a href="/resources" class="mr-10" style="color: #576CA8;">Our Team</a>
+                {% else %} 
+                <a href="/resources" class="mr-10">Our Team</a>
+                {%endif%}
+
+            </div>
+        </div>
+    </div>
+
+
+
+</header>

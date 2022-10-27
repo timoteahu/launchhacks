@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+{% block main %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css') }}">
+<link rel="stylesheet" href="../static/css/podcast.css" />
+
+<body class="mt-40" style="background-color: black;">
+    {% include "navbar.html" %}
+    <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center mb-24">
+            <p class="text-white text-5xl mb-10">LaunchHacks II</p>
+            <div class="flex flex-col md:flex-row justify-center items-center mb-10">
+                <img src="../static/img/lightbulb.png" style="width: 15em;" alt="">
+                <img src="../static/img/thinking.png" style="width: 10em;" alt="">
+            </div>
+            <p class="text-3xl text-white text-center mx-10 mb-8" style="max-width: 20em;">The hackathon that inspires you to be innovative, creative, and <span class="text-blue-200 font-bold">launch</span> your own initiatives.</p>
+
+            <a href="https://launchhacks-ii.devpost.com/"><button class="text-white home-button">Sign Up for LauncHacks II!</button></a>
+        </div>
+
+        <div class="flex flex-col justify-center items-center text-white mb-10">
+            <p class="text-5xl">Important Deadlines</p>
+
+            <div class="timeline">
+                <div class="timeline__component">
+                  <div class="timeline__date timeline__date--right text-blue-200">December 14, 2022</div>
+                </div>
+
+                <div class="timeline__middle">
+                  <div class="timeline__point"></div>
+                </div>
+                <div class="timeline__component timeline__component--bg">
+                  <h2 class="timeline__title">Last Day to Sign Up for LaunchHacks II</h2>
+                  <p class="timeline__paragraph">
+                    This is the deadline to enter our hackathon and win amazing prizes! 
+                  </p>
+                </div>
+    
+                <div class="timeline__component timeline__component--bg">
+                    <h2 class="timeline__title">First Day of the Hackathon</h2>
+                    <p class="timeline__paragraph">
+                      This is the kickoff day for the hackathon. We will post a video detailing the prompt and what to build so everyone can start!
+                    </p>
+                  </div>
+                  <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                  </div>
+                  <div class="timeline__component">
+                    <div class="timeline__date text-blue-200">December 15, 2022</div>
+                  </div>
+    
+    
+                  <div class="timeline__component">
+                    <div class="timeline__date timeline__date--right text-blue-200">December 19, 2022</div>
+                  </div>
+                  <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                  </div>
+                  <div class="timeline__component timeline__component--bg">
+                    <h2 class="timeline__title">Last Day to Submit To Hackathon</h2>
+                    <p class="timeline__paragraph">
+                       This is the final day to submit to the hackathon and we will ensure that only projects created within this time period are eligible. 
+                    </p>
+                  </div>
+    
+    
+                <div class="timeline__component timeline__component--bg">
+                  <h2 class="timeline__title"> Start of Judging Period </h2>
+                  <p class="timeline__paragraph">
+                    This is the first day of judging everyone's submissions, and making sure they are eligible and follow our criteria. 
+                  </p>
+                </div>
+                <div class="timeline__middle">
+                  <div class="timeline__point"></div>
+                </div>
+                <div class="timeline__component">
+                  <div class="timeline__date text-blue-200">December 20, 2022</div>
+                </div>
+    
+    
+                <div class="timeline__component">
+                  <div class="timeline__date timeline__date--right text-blue-200">December 24, 2022</div>
+                </div>
+                <div class="timeline__middle">
+                  <div class="timeline__point"></div>
+                </div>
+                <div class="timeline__component timeline__component--bg">
+                  <h2 class="timeline__title">End of Judging + Awards Announced</h2>
+                  <p class="timeline__paragraph">
+                   This is when we will announce the winners for our hackathon. 
+                  </p>
+                </div>
+    
+              </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center text-white">
+            <p class="text-5xl mb-10">Our Sponsors</p>
+            <p class="text-2xl mb-10">Fiscally Sponsored by 501(c)3 nonprofit: </p>
+            <a href="https://hackclub.com/" class="mb-10"><img src="../static/img/sponsors/hacksclub.png" alt=""></a>
+            <p class="text-2xl mb-10">Other Sponsors:</p>
+            <div class="flex flex-wrap justify-center items-center" style="max-width: 88em;">
+                <img src="../static/img/sponsors/interviewcake.png" alt="">
+                <img src="../static/img/sponsors/echo3d.png" alt="">
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active")
+            navigation.classList.toggle("active")
+        });
+    </script>
+    <script src="../static/js/podcast.js"></script>
+</body>
+
+{% endblock %}
