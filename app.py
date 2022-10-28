@@ -1,8 +1,10 @@
 from flask import Flask, render_template, url_for, session, redirect
-
+from flask_sslify import SSLify
 import os
 
 app = Flask('app')
+if 'DYNO' in os.environ: 
+    sslify = SSLify(app)
 
 
 @app.route('/')
