@@ -16,6 +16,10 @@ def mission():
 @app.route('/launchhacks')
 def launchhacks():
     return render_template("launchhacks.html")
-    
+
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=1000, debug=True)
