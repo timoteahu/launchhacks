@@ -303,18 +303,20 @@ header img {
     }
 
     .menu-btn {
-        background: url(../img/icons/bars-solid.svg) no-repeat;
+        background: url(https://i.ibb.co/HrfVRcx/menu.png) no-repeat;
         background-size: 30px;
         background-position: center;
+        margin-top: 40px;
         width: 40px;
         height: 40px;
         cursor: pointer;
         transition: 0.3 ease;
     }
-
+    
     .menu-btn.active {
         z-index: 999;
-        background: url(../img/icons/xmark-solid.svg) no-repeat;
+        margin-top: 40px;
+        background: url(https://i.ibb.co/rt3HybH/close.png) no-repeat;
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;

@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block main %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css') }}">
+<link rel="stylesheet" href="../static/css/podcast.css" />
+
+<body class="mt-40" style="background-color: black;">
+    {% include "navbar.html" %}
+
+
+    <div class="flex flex-col justify-center items-center text-white w-full text-center">
+        <div class="flex flex-col justify-center items-center w-full mt-10" style="max-width: 77em;">
+            <p class="text-5xl underline mb-10">Our Mission</p>
+            <p class="text-2xl mb-10 mx-4" style="max-width: 35em;"><span class="text-blue-200">Provide</span> a way to <span class="text-blue-200">inspire</span> others to launch their own initiatives. We strive to be the <span class="text-blue-200">agents of change</span> that allow students to thrive with the <span class="text-blue-200">power of technology.</span></p>
+
+            <section class="relative mb-10">
+                <div class="flex flex-col md:flex-row justify-center items-center">
+
+                    <a href="https://www.google.com" class="sm:mr-10">
+                        <div class="max-w-xs rounded overflow-hidden shadow-lg mb-10 card"
+                            style="background-color: white; height: 24em;"">
+                            <img class=" w-full" src="../static/img/lightbulb.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl text-center mb-2">Become a Mentor</div>
+                                <p class="text-gray-700 text-base text-center">
+                                    We provide the mentorship through our during hackathon workshops.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.google.com" class="sm:mr-10">
+                        <div class="max-w-xs rounded overflow-hidden shadow-lg mb-10 card h-full"
+                            style="background-color: white; height: 24em;"">
+                            <img class=" w-full" src="../static/img/lightbulb.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl text-center mb-2">Sign Up to Learn</div>
+                                <p class="text-gray-700 text-base text-center">
+                                    We get speakers to come and teach about the uses of technology and innovation.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.google.com" class="sm:mr-10">
+                        <div class="max-w-xs rounded overflow-hidden shadow-lg mb-10 card h-full"
+                            style="background-color: white; height: 24em;">
+                            <img class="w-full" src="../static/img/lightbulb.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl text-center mb-2">Read our Editorials</div>
+                                <p class="text-gray-700 text-base text-center">
+                                    Build and Innovate through the various technologies of web apps, libraries, and frameworks.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+            <p class="text-5xl mb-10" style="overflow-y: hidden;">Utilize the Technologies</p>
+            <div class="flex flex-wrap justify-center items-center">
+                <img class="m-4" src="../static/img/tools/bootstrap.png" alt="">
+                <img class="m-4" src="../static/img/tools/django.png" alt="">
+                <img class="m-4" src="../static/img/tools/flask.png" alt="">
+                <img class="m-4" src="../static/img/tools/mongodb.png" alt="">
+                <img class="m-4" src="../static/img/tools/postgres.jpeg" alt="">
+                <img class="m-4" src="../static/img/tools/react.png" alt="">
+                <img class="m-4" src="../static/img/tools/reactnative.png" alt="">
+                <img class="m-4" src="../static/img/tools/sklearn.png" alt="">
+                <img class="m-4" src="../static/img/tools/tailwind.png" alt="">
+                <img class="m-4" src="../static/img/tools/tensor.png" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active")
+            navigation.classList.toggle("active")
+        });
+    </script>
+    <script src="../static/js/podcast.js"></script>
+</body>
+
+{% endblock %}
